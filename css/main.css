@@ -38,6 +38,7 @@ h1 {
     font-size: 134.31px;
     margin-bottom: 20px;
     color: #ED1C24;
+    margin-left: 50px;
 }
 
 p {
@@ -47,6 +48,7 @@ p {
     line-height: 1.1;
     color: #4D4D4D;
     max-width: 830px;
+    margin-left: 50px;
 }
 
 /* ===============================
@@ -67,11 +69,11 @@ p {
 
 .wrap .left img {
     width: 340px;
-    padding: 20px;
+    /*padding: 20px;*/
     position: absolute;
     top: 50%;
     left: 50%;
-    margin: -70px 0 0 -170px;
+    margin: -70px 0 0 -140px;
 }
 
 
@@ -80,9 +82,11 @@ p {
 =============================== */
 @media only screen and (max-width: 1300px) {
     .wrap {position: relative;top: 0;transform: unset;width: 100%;text-align: center;padding: 50px 0;}
+    .wrap .left {display: none;}
     .wrap .left img {width: 340px;padding: 0;position: relative;top: 0;left: 0;margin: 0;display: none;}
     .wrap .right img {display: block;width: 340px;margin: 100px auto;}
-    .col-lg-6 {flex: none !important;max-width: 100% !important;}
+    .col-lg-7 {flex: none !important;max-width: 100% !important;}
+    h1 {margin-left: 0;}
     p {margin: 0 auto;}
 }
 
